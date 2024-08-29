@@ -1,0 +1,51 @@
+<%- include ("partials/header.ejs") %>
+<div class="blog_creating_container">
+  <h1>Edit your blog titled <%= data[articleNum].title %></h1>
+  <form id="submit" action="/update?classNum=<%= articleNum %>" method="POST">
+    <div class="title">
+      <label for="articleTitle">Title</label>
+      <input
+        type="text"
+        id="articleTitle"
+        name="title"
+        placeholder="Blog Title"
+        value="<%= data[articleNum].title %>"
+        required
+      />
+    </div>
+    <div class="author_name">
+      <label for="authorName">Author Name</label>
+      <input
+        type="text"
+        name="author"
+        id="authorName"
+        placeholder="Author Name"
+        value="<%= data[articleNum].author %>"
+        required
+      />
+    </div>
+    <div class="summary">
+      <label for="blogSummary">Blog Summary</label>
+      <textarea
+        name="summary"
+        id="blogSummary"
+        placeholder="Keep it shorter than 255 character"
+        maxlength="255"
+        required
+      >
+<%= data[articleNum].summary %></textarea
+      >
+    </div>
+    <div class="essay">
+      <label for="yourEssay">Article</label>
+      <textarea name="article" id="yourEssay" placeholder="Your Essay" required>
+<%= data[articleNum].article %></textarea
+      >
+    </div>
+    <div class="submit">
+      <input class="submit" type="submit" value="Update" />
+    </div>
+  </form>
+</div>
+
+<%- include ("partials/footer.ejs") %>

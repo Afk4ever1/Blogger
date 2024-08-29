@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playwrite+IS:wght@100..400&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html{
+  height: 100%;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+  background-color: rgba(218, 236, 152, 255);
+  background-image: url(./Images/Main_bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  min-height: 100%;
+}
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 5px 20px 0;
+  padding: 10px;
+  font-family: "Lato", sans-serif;
+}
+header h2 a {
+  text-decoration: none;
+}
+header h2 a:visited {
+  text-decoration: none;
+  color: rgba(22, 37, 44, 255);
+}
+.header h2 {
+  font-size: 3rem;
+  font-family: "Playwrite IS", cursive;
+}
+
+.header ul {
+  padding-top: 25px;
+}
+.header ul li {
+  list-style-type: none;
+  display: inline;
+  text-decoration: none;
+  margin-left: 20px;
+}
+.header ul li a {
+  text-decoration: none;
+  color: rgba(218, 236, 152, 255);
+  font-size: 1.5rem;
+  padding: 7.5px;
+  background-color: rgba(26, 75, 69, 255);
+  border-radius: 25px;
+}
+.header ul li a:hover {
+  background-color: rgba(96, 165, 121, 255);
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  margin: 0 20px;
+  gap: 20px;
+}
+.container h1 {
+  color: black;
+  font-size: 3rem;
+}
+.btns {
+  display: flex;
+  gap: 20px;
+}
+.btns button {
+  outline: none;
+  color: rgba(218, 236, 152, 255);
+  background-color: rgba(22, 37, 44, 255);
+  border: none;
+  width: 200px;
+  height: 50px;
+  font-size: 2rem;
+  border-radius: 25px;
+}
+.btns button:hover {
+  cursor: pointer;
+  background-color: rgba(96, 165, 121, 255);
+}
+.btns button a {
+  text-decoration: none;
+}
+.btns button :where(a:visited, a:link, a:active) {
+  color: rgba(218, 236, 152, 255);
+}
+.article_container {
+  height: 90vh;
+}
+footer {
+  
+  color: aliceblue;
+  width: 100%;
+  text-align: center;
+  font-size: 1.5rem;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+
+}

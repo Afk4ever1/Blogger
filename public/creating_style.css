@@ -1,0 +1,57 @@
+.blog_creating_container{
+    background-color: rgba(41, 79, 0, 0.214);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 80%;
+    margin: 20px 50px;
+    padding: 10px;
+    border-radius: 25px;
+    
+}
+.blog_creating_container h1{
+    font-size: 2.5rem;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+form div{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+}
+form div input{
+    height: 25px;
+    width: 300px;
+    border: none;
+    border-radius: 10px;
+    padding-left: 10px;
+    font-size: 1.25rem;
+}
+form div input::placeholder{
+    padding-left: 2.5px;
+    font-size: 17.5px
+}
+form div input:focus{
+    outline-color: rgba(218, 236, 152, 255);
+}
+form div textarea{
+    height: 100px;
+    width: 600px;
+    border: none;
+    border-radius: 10px;
+    padding-left: 10px;
+    font-size: 1.25rem;
+    resize: vertical;
+}
+.essay textarea{
+    height: 200px;
+    width: 800px;
+}
+textarea:focus{
+    outline-color: rgba(218, 236, 152, 255);
+    
+}
